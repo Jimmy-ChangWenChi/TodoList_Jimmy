@@ -166,8 +166,7 @@ const requestListener = (req,res) => {
 
 const server = http.createServer(requestListener);
 
-server.listen(process.env.PORT || 3000);
-
+server.listen(process.env.PORT || 3000); // process.env.PORT 跟 process.env.Port 不同
 //another way to write
 
 /*
