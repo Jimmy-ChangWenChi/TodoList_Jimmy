@@ -32,7 +32,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"title\":\"今天在練習\"\n}",
+					"raw": "{\n    \"title\":\"今天修改程式碼\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -58,7 +58,19 @@
 			"name": "刪除所有代辦",
 			"request": {
 				"method": "DELETE",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://serene-inlet-05836.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"serene-inlet-05836",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
 			},
 			"response": []
 		},
@@ -66,7 +78,20 @@
 			"name": "刪除單筆代辦",
 			"request": {
 				"method": "DELETE",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://serene-inlet-05836.herokuapp.com/todos/c9879fbc-2d76-4a68-a96a-28a0f1b8fe85",
+					"protocol": "https",
+					"host": [
+						"serene-inlet-05836",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"c9879fbc-2d76-4a68-a96a-28a0f1b8fe85"
+					]
+				}
 			},
 			"response": []
 		},
@@ -74,7 +99,29 @@
 			"name": "更新代辦",
 			"request": {
 				"method": "PATCH",
-				"header": []
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"今天嘗試改程式碼\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://serene-inlet-05836.herokuapp.com/todos/5a1891a8-ff70-4315-a7b5-43025cc22070",
+					"protocol": "https",
+					"host": [
+						"serene-inlet-05836",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"5a1891a8-ff70-4315-a7b5-43025cc22070"
+					]
+				}
 			},
 			"response": []
 		}
